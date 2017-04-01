@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>dlnd_tv_script_generation_</title><script src="https://unpkg.com/jupyter-js-widgets@2.0.*/dist/embed.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>dlnd_tv_script_generation</title><script src="https://unpkg.com/jupyter-js-widgets@2.0.*/dist/embed.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -11904,7 +11904,7 @@ Barney_Gumble: Yeah, you should only drink to enhance your social skills.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[215]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -11924,14 +11924,6 @@ Barney_Gumble: Yeah, you should only drink to enhance your social skills.
 <span class="c1">#     for idx, word in sorted_word_list:</span>
     <span class="n">vocab_to_int</span> <span class="o">=</span> <span class="p">{</span> <span class="n">word</span><span class="p">:</span> <span class="n">idx</span> <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">word</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">sorted_word_list</span><span class="p">)</span> <span class="p">}</span>
     <span class="n">int_to_vocab</span> <span class="o">=</span> <span class="p">{</span> <span class="n">idx</span><span class="p">:</span> <span class="n">word</span> <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">word</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">sorted_word_list</span><span class="p">)</span> <span class="p">}</span>
-    
-<span class="c1">#     counts = Counter(text)</span>
-<span class="c1">#     vocab = sorted(counts, key=counts.get, reverse=True)</span>
-<span class="c1">#     vocab_to_int_1 = {word: ii for ii, word in enumerate(vocab)}</span>
-<span class="c1">#     int_to_vocab_1 = {v:k for k, v in vocab_to_int.items()}</span>
-    
-<span class="c1">#     print(vocab_to_int_1 == vocab_to_int)</span>
-<span class="c1">#     print(int_to_vocab_1 == int_to_vocab)</span>
     
     <span class="k">return</span> <span class="n">vocab_to_int</span><span class="p">,</span> <span class="n">int_to_vocab</span>
 
